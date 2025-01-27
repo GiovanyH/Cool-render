@@ -8,6 +8,9 @@
             "args": [
                 "-g",
                 "-std=c++17",
+                "-static",
+                "-static-libstdc++",
+                "-static-libgcc",
                 // ISSUE: problem in some OS regarding "fatal error: glad/glad.h not found."
 		// SOL.: use the workspace directory path variable here:
     		"-I${workspaceFolder}/include",
